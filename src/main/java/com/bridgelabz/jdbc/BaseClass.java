@@ -15,6 +15,7 @@ public class BaseClass {
         public static  void main(String[] args) throws SQLException {
             EmployeePayroll employeePayroll=new EmployeePayroll();
             employeePayroll.retrieveEmployeePayrollData();
+            employeePayroll.insertEmployeePayrollData();
 
             listOfDrivers();
             setUpDatabase();

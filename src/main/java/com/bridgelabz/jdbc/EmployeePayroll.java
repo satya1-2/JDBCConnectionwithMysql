@@ -2,6 +2,7 @@
 package com.bridgelabz.jdbc;
 
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -25,5 +26,17 @@ public class EmployeePayroll extends BaseClass {
         System.out.println("Retrieve all the employee payroll data");
     }
 
+    public void insertEmployeePayrollData() throws SQLException {
+        connection = setUpDatabase();
+        String insertQuery = "Insert into employeepayroll (name, gender,salary,date_info )values(?,?,?,?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
+        preparedStatement.setString(1, "Terrisa");
+        preparedStatement.setString(2, "f");
+        preparedStatement.setDouble(3, 25000000.00);
+        preparedStatement.setString(4, "2020-05-01");
+        preparedStatement.execute();
+
+        System.out.println("Record added successfully");
+    }
 
 }

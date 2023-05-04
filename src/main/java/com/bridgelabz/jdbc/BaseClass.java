@@ -13,6 +13,8 @@ public class BaseClass {
         public static Connection connection;
 
         public static  void main(String[] args) throws SQLException {
+            EmployeePayroll employeePayroll=new EmployeePayroll();
+            employeePayroll.retrieveEmployeePayrollData();
 
             listOfDrivers();
             setUpDatabase();

@@ -18,6 +18,7 @@ public class BaseClass {
         employeePayroll.insertEmployeePayrollData();
         employeePayroll.updateEmployeePayrollData();
         employeePayroll.updateWithPreparedStatementEmployeePayrollData();
+        employeePayroll.deleteEmployeePayroll();
         listOfDrivers();
         setUpDatabase();
 

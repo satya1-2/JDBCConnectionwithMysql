@@ -19,6 +19,7 @@ public class BaseClass {
         employeePayroll.updateEmployeePayrollData();
         employeePayroll.updateWithPreparedStatementEmployeePayrollData();
         employeePayroll.deleteEmployeePayroll();
+        employeePayroll.findDataBetweenGivenDateRange();
         listOfDrivers();
         setUpDatabase();
 

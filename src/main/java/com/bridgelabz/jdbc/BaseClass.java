@@ -1,6 +1,5 @@
 package com.bridgelabz.jdbc;
 
-//import com.sun.jdi.connect.spi.Connection;
 
 import java.sql.Connection;
 import java.sql.Driver;
@@ -20,7 +19,11 @@ public class BaseClass {
         employeePayroll.updateWithPreparedStatementEmployeePayrollData();
         employeePayroll.deleteEmployeePayroll();
         employeePayroll.findDataBetweenGivenDateRange();
-        employeePayroll.sumOFGivenGender();
+        employeePayroll.sumOFGivenSalary();
+        employeePayroll.maxOfGivenSalary();
+        employeePayroll.minOfGivenSalary();
+        employeePayroll.avgOfGivenSalary();
+        employeePayroll.countOfGivenSalary();
         listOfDrivers();
         setUpDatabase();
 

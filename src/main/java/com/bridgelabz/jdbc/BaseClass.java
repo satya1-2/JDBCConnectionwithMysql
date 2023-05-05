@@ -20,6 +20,7 @@ public class BaseClass {
         employeePayroll.updateWithPreparedStatementEmployeePayrollData();
         employeePayroll.deleteEmployeePayroll();
         employeePayroll.findDataBetweenGivenDateRange();
+        employeePayroll.sumOFGivenGender();
         listOfDrivers();
         setUpDatabase();
 

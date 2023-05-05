@@ -82,4 +82,20 @@ public class EmployeePayroll extends BaseClass {
         System.out.println("Record updated successfully" + count);
     }
 
+
+    public void sumOFGivenGender() throws SQLException {
+        connection = setUpDatabase();
+        String sumOfQuery = "select SUM(salary) from employeepayroll where gender = 'M' group by gender";
+        Statement statement = connection.createStatement();
+        ResultSet count = statement.executeQuery(sumOfQuery);
+        while (count.next()) {
+            System.out.println("id " + count.getInt(1));
+            System.out.println("name " + count.getString(2));
+            System.out.println("gender " + count.getString(3));
+            System.out.println("salary " + count.getDouble(4));
+            System.out.println("date_info " + count.getString(5));
+
+        }
+        System.out.println("Record updated successfully" + count);
+    }
 }
